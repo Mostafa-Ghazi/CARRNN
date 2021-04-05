@@ -1,5 +1,5 @@
 # CARRNN
-Continuous Autoregressive Recurrent Neural Network for Temporal Representation Learning
+A Continuous Autoregressive Recurrent Neural Network for Temporal Representation Learning
 <br />
 
 # Description
