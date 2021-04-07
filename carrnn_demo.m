@@ -175,7 +175,6 @@ modelTrain.lossValid = zeros(numIterations, 1); % validation loss
 patienceLosses = Inf(1, patienceIterations); % previously smallest losses to compare
 earlyStop = false; % early stopping flag
 
-
 % Displaying training progress
 figure, subplot(2, 1, 1), xlabel('Iteration'), ylabel(evalMetric), ylim([0, Inf]), grid on;
 lineErrorTrain = animatedline('Color', [0, 0.447, 0.741], 'LineStyle', '-', 'LineWidth', 1.5);
