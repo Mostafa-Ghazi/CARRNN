@@ -158,14 +158,6 @@ dt_iqr = quantile(cat(2, dt_train{:}), [0.25 0.75]); % minimum and maximum value
 
 %% Network Training and Validation
 
-% Displaying training progress
-figure, subplot(2, 1, 1), ylabel(evalMetric), ylim([0, Inf]), grid on;
-lineErrorTrain = animatedline('Color', [0, 0.447, 0.741], 'LineStyle', '-', 'LineWidth', 1.5);
-lineErrorValid = animatedline('Color', [0.494, 0.184, 0.556], 'LineStyle', '--', 'LineWidth', 1.5);
-subplot(2, 1, 2), xlabel('Iteration'), ylabel('Loss'), ylim([0, Inf]), grid on;
-lineLossTrain = animatedline('Color', [0.85, 0.325, 0.098], 'LineStyle', '-', 'LineWidth', 1.5);
-lineLossValid = animatedline('Color', [0.466, 0.674, 0.188], 'LineStyle', '--', 'LineWidth', 1.5);
-
 % Randomly sampling training and validation subsets
 rng(0); % random number generation seed for reproducibility
 numSampleValid = ceil(numSampleTrain * ratioValid); % number of validation samples
@@ -182,6 +174,17 @@ modelTrain.lossTrain = zeros(numIterations, 1); % training loss
 modelTrain.lossValid = zeros(numIterations, 1); % validation loss
 patienceLosses = Inf(1, patienceIterations); % previously smallest losses to compare
 earlyStop = false; % early stopping flag
+
+
+% Displaying training progress
+figure, subplot(2, 1, 1), xlabel('Iteration'), ylabel(evalMetric), ylim([0, Inf]), grid on;
+lineErrorTrain = animatedline('Color', [0, 0.447, 0.741], 'LineStyle', '-', 'LineWidth', 1.5);
+lineErrorValid = animatedline('Color', [0.494, 0.184, 0.556], 'LineStyle', '--', 'LineWidth', 1.5);
+legend({'Training', 'Validation'}, 'Location', 'northeast'), legend('boxon');
+subplot(2, 1, 2), xlabel('Iteration'), ylabel('Loss'), ylim([0, Inf]), grid on;
+lineLossTrain = animatedline('Color', [0.85, 0.325, 0.098], 'LineStyle', '-', 'LineWidth', 1.5);
+lineLossValid = animatedline('Color', [0.466, 0.674, 0.188], 'LineStyle', '--', 'LineWidth', 1.5);
+legend({'Training', 'Validation'}, 'Location', 'northeast'), legend('boxon');
 
 % Loop over iterations
 while modelTrain.iteration < numIterations && ~earlyStop
