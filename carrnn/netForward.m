@@ -12,7 +12,7 @@ function NetParam = netForward(NetParam, x, dt_x, dt_xy)
 %%%%%  This code is an implementation of the algorithm published in:  %%%%%
 %%%%%  CARRNN: A Continuous Autoregressive Recurrent Neural Network   %%%%%
 %%%%%  for Deep Representation Learning from Sporadic Temporal Data   %%%%%
-%%%%%                https://arxiv.org/abs/                           %%%%%
+%%%%%                https://arxiv.org/abs/2104.03739                 %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Feedforward pass of the input through the network
