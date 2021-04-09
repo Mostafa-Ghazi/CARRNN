@@ -11,7 +11,7 @@
 %%%%%  This code is an implementation of the algorithm published in:  %%%%%
 %%%%%  CARRNN: A Continuous Autoregressive Recurrent Neural Network   %%%%%
 %%%%%  for Deep Representation Learning from Sporadic Temporal Data   %%%%%
-%%%%%                https://arxiv.org/abs/                           %%%%%
+%%%%%                https://arxiv.org/abs/2104.03739                 %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Training, validation, and testing the proposed model for biomarker value prediction using a simulated data
