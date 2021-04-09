@@ -12,7 +12,7 @@ function NetParam = netInitialize(NetParam, variableType)
 %%%%%  This code is an implementation of the algorithm published in:  %%%%%
 %%%%%  CARRNN: A Continuous Autoregressive Recurrent Neural Network   %%%%%
 %%%%%  for Deep Representation Learning from Sporadic Temporal Data   %%%%%
-%%%%%                https://arxiv.org/abs/                           %%%%%
+%%%%%                https://arxiv.org/abs/2104.03739                 %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Initialization of the network parameters
