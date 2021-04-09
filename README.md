@@ -48,12 +48,12 @@ When you publish your research using this toolbox, please cite [1] as
   <br />
   year = {2021},
   <br />
-  volume = {abs/},}
+  volume = {abs/2104.03739},}
 <br />
 
 # References
 [1] Mehdipour Ghazi, M., Sørensen, L., Ourselin, S., and Nielsen, M., 2021. CARRNN: A Continuous Autoregressive Recurrent Neural Network for Deep Representation Learning
-from Sporadic Temporal Data. arXiv preprint arXiv:.
+from Sporadic Temporal Data. arXiv preprint arXiv:2104.03739.
 <br />
 [2] Mehdipour Ghazi, M., Nielsen, M., Pai, A., Cardoso, M.J., Modat, M., Ourselin, S., and Sørensen, L., 2019. Training recurrent neural networks robust to incomplete data: application to Alzheimer’s disease progression modeling. Medical Image Analysis 53, 39-46.
 <br />
