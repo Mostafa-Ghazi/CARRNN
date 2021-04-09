@@ -12,7 +12,7 @@ function [loss, NetParam] = netLoss(NetParam, y)
 %%%%%  This code is an implementation of the algorithm published in:  %%%%%
 %%%%%  CARRNN: A Continuous Autoregressive Recurrent Neural Network   %%%%%
 %%%%%  for Deep Representation Learning from Sporadic Temporal Data   %%%%%
-%%%%%                https://arxiv.org/abs/                           %%%%%
+%%%%%                https://arxiv.org/abs/2104.03739                 %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Calculating the network loss and output gradients
