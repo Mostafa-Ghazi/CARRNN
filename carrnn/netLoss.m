@@ -31,6 +31,6 @@ y(isnan(y)) = 0; % missing target values are replaced with zeros
 loss = sum(sum((NetParam.outputActive - y) .^ 2 ./ (NetParam.sequenceSize * NetParam.outputSize * denomFactor)));
 
 % Gradients of the normalized loss w.r.t. network output with zero missing error propagation
-NetParam.deltaOutputActive = (NetParam.outputActive - y) ./ (2 * NetParam.sequenceSize * NetParam.outputSize * denomFactor);
+NetParam.deltaOutputActive = 2 * (NetParam.outputActive - y) ./ (NetParam.sequenceSize * NetParam.outputSize * denomFactor);
 
 end
