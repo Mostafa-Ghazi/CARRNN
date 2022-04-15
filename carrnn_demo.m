@@ -289,4 +289,4 @@ for i = 1 : numSampleTest
     end
 end
 errorTest = netPerformance(binnedData, binnedDataPred, evalMetric); % test performance
-fprintf('Test MAE = %4.4f \n', errorTest); % display test modeling performance
+fprintf(['Test ' evalMetric ' = %4.4f \n'], errorTest); % display test modeling performance
