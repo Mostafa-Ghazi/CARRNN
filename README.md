@@ -38,22 +38,23 @@ MATLAB (tested with v9.8), Statistics and Machine Learning Toolbox (tested with 
 When you publish your research using this toolbox, please cite [1] as
 <br />
 <br />
-@article{Ghazi2021,
+@article{Ghazi2022,
 <br />
   title = {{CARRNN}: {A} Continuous Autoregressive Recurrent Neural Network for Deep Representation Learning from Sporadic Temporal Data},
   <br />
   author = {Mehdipour Ghazi, Mostafa and S{\o}rensen, Lauge and Ourselin, S{\'e}bastien and Nielsen, Mads},
   <br />
-  journal = {CoRR},
+  journal = {IEEE Transactions on Neural Networks and Learning Systems},
   <br />
-  year = {2021},
+  year = {2022},
   <br />
-  volume = {abs/2104.03739},}
+  pages={1--11},
+  <br />
+  doi={10.1109/TNNLS.2022.3177366},}
 <br />
 
 # References
-[1] Mehdipour Ghazi, M., Sørensen, L., Ourselin, S., and Nielsen, M., 2021. CARRNN: A Continuous Autoregressive Recurrent Neural Network for Deep Representation Learning
-from Sporadic Temporal Data. arXiv preprint arXiv:2104.03739.
+[1] Mehdipour Ghazi, M., Sørensen, L., Ourselin, S., and Nielsen, M., 2022. CARRNN: A Continuous Autoregressive Recurrent Neural Network for Deep Representation Learning from Sporadic Temporal Data. IEEE Transactions on Neural Networks and Learning Systems, 1-11, 10.1109/TNNLS.2022.3177366.
 <br />
 [2] Mehdipour Ghazi, M., Nielsen, M., Pai, A., Cardoso, M.J., Modat, M., Ourselin, S., and Sørensen, L., 2019. Training recurrent neural networks robust to incomplete data: application to Alzheimer’s disease progression modeling. Medical Image Analysis 53, 39-46.
 <br />
